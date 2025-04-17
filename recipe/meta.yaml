@@ -55,11 +55,13 @@ requirements:
 test:
   imports:
     - StructuralGT
-  commands:
-    - cd /
-    - pytest --pyargs structuralgt -v -ra
+    - gsd.hoomd
   requires:
     - pytest
+  source_files:
+    - StructuralGT/pytest
+  commands:
+    - pytest StructuralGT/pytest
 
 about:
   home: https://github.com/compass-stc/{{ name }}
