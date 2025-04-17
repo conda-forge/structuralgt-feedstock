@@ -1,5 +1,5 @@
 {% set name = "StructuralGT" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/compass-stc/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 837063cf709917e4dd7b66a1e340bdbe6f7b74ecd79f4e56910def9b0d8e3542
+  sha256: 5ec6f70112ab6cdd7569533a7c300df6b35650786284c61b73166cbc9413b2e8
 
 build:
   skip: true  # [py<=311]
@@ -55,11 +55,13 @@ requirements:
 test:
   imports:
     - StructuralGT
-  commands:
-    - cd /
-    - pytest --pyargs gsd -v -ra --ignore-glob="*largefile*"
+    - gsd.hoomd
   requires:
     - pytest
+  source_files:
+    - StructuralGT/pytest
+  commands:
+    - pytest StructuralGT/pytest
 
 about:
   home: https://github.com/compass-stc/{{ name }}
