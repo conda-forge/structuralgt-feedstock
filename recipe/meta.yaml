@@ -1,5 +1,5 @@
 {% set name = "StructuralGT" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/compass-stc/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f54f1e2f8f3adc345f66929a9397f9444b8bb449276f084030c0caa25d2876d0
+  sha256: 0b9a6a47c3f40d6803533fd96c21f438f8fa45e42f238b36dd7a2c53a9cefd2e
 
 build:
   skip: true  # [py<=311]
@@ -29,7 +29,7 @@ requirements:
     - python
     - setuptools
     - wheel
-    - numpy >=2.0.0rc1
+    - numpy >=2.0.0
     - cython >=3.0.2
     - igraph
     - eigen
@@ -64,7 +64,19 @@ test:
     - pytest StructuralGT/pytest
 
 about:
-  home: https://github.com/compass-stc/{{ name }}
+  home: https://compass.engin.umich.edu/structuralgt-software/
+  repository: https://github.com/compass-stc/StructuralGT
+  documentation: https://structuralgt.readthedocs.io/en/latest/
+  description: |
+    StructuralGT (SGT) provides a set of tools for the quantitative analysis
+    of material networks, relying extensively on methods from graph theory
+    (GT). The API exposes the entire data-to-network workflow combined with
+    modular tools for analysis of the resulting graphs. The Python API makes
+    calls to either fast C++ libraries or SGT scripts. The advanced user has
+    the option to incorporate their own C++ scripts using the provided
+    template wrapper. Finally, SGT writes the analyzed graphs to a
+    geometry-preserving filetype allowing for easy visualization of the data
+    with the OVITO desktop applicatio.
   license: BSD-3-Clause
   license_file: LICENSE
   summary: Graph theoretic analysis of material science netwoks.
