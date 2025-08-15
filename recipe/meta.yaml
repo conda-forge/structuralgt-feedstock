@@ -1,5 +1,5 @@
 {% set name = "StructuralGT" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/compass-stc/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0b9a6a47c3f40d6803533fd96c21f438f8fa45e42f238b36dd7a2c53a9cefd2e
+  sha256: 6fe46f997c26ad541a36bc5c1ac4be37e08dee0791032f918fa398651dece790
 
 build:
   skip: true  # [py<=311]
