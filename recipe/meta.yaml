@@ -65,8 +65,6 @@ test:
 
 about:
   home: https://compass.engin.umich.edu/structuralgt-software/
-  repository: https://github.com/compass-stc/StructuralGT
-  documentation: https://structuralgt.readthedocs.io/en/latest/
   description: |
     StructuralGT (SGT) provides a set of tools for the quantitative analysis
     of material networks, relying extensively on methods from graph theory
@@ -76,10 +74,13 @@ about:
     the option to incorporate their own C++ scripts using the provided
     template wrapper. Finally, SGT writes the analyzed graphs to a
     geometry-preserving filetype allowing for easy visualization of the data
-    with the OVITO desktop applicatio.
+    with the OVITO desktop application.
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: Graph theoretic analysis of material science netwoks.
+  summary: Graph based methods for analysis of material science networks.
+
+  doc_url: https://structuralgt.readthedocs.io/en/latest/
+  dev_url: https://github.com/compass-stc/StructuralGT
 
 extra:
   recipe-maintainers:
