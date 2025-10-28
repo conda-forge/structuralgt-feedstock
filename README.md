@@ -24,6 +24,21 @@ geometry-preserving filetype allowing for easy visualization of the data
 with the OVITO desktop application.
 
 
+Development: https://github.com/compass-stc/StructuralGT
+
+Documentation: https://structuralgt.readthedocs.io/en/latest/
+
+StructuralGT (SGT) provides a set of tools for the quantitative analysis
+of material networks, relying extensively on methods from graph theory
+(GT). The API exposes the entire data-to-network workflow combined with
+modular tools for analysis of the resulting graphs. The Python API makes
+calls to either fast C++ libraries or SGT scripts. The advanced user has
+the option to incorporate their own C++ scripts using the provided
+template wrapper. Finally, SGT writes the analyzed graphs to a
+geometry-preserving filetype allowing for easy visualization of the data
+with the OVITO desktop applicatio.
+
+
 Current build status
 ====================
 
