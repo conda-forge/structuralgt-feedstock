@@ -1,5 +1,5 @@
 {% set name = "StructuralGT" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/compass-stc/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: bb95682bbac6ecd0d43bfbd61f2dd1f65404bf94ac5c0a7a6f78592e2d8d61e3
+  sha256: 021d0bb92028adea022a14228b20276b29d5dfabe3414b835043a85d8e1ecc3d
 
 build:
   skip: true  # [py<=311]
@@ -22,6 +22,7 @@ requirements:
     - numpy >=2                              # [build_platform != target_platform]
     - igraph
     - eigen
+    - pythran
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
