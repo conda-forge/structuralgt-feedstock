@@ -43,13 +43,9 @@ requirements:
     - networkx
     - opencv
     - pandas
-    - cython
     - gsd >=3.0.0
     - python-igraph
     - igraph
-    - eigen
-    - pytest
-    - cmake
     - freud >=3.1.0
     - ipywidgets
 
